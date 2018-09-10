@@ -2,3 +2,11 @@
 cdf() {  # short for cdfinder
   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
+
+codef() {
+  code "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+
+atomf() {
+  atom "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
