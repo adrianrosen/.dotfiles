@@ -1,0 +1,20 @@
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
+export GREP_OPTIONS="--color=auto"
+
+export POD_LOCAL_HOME="~/Documents/localPods"
+
+export CC="/usr/bin/llvm-gcc"
+export CXX="/usr/bin/llvm-g++"
+
+export PKG_CONFIG_PATH="/usr/local/opt/gdal2/lib/pkgconfig"
+export CPPFLAGS="-I/usr/local/opt/gdal2/include"
+export LDFLAGS="-L/usr/local/opt/gdal2/lib"
+export GDAL_DRIVER_PATH="/usr/local/lib/gdalplugins"
+export GDAL_DATA="/usr/local/opt/gdal2/share/gdal/"
+
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/opt/gdal2/bin:$PATH"
+export PATH="/usr/local/opt/ccache/libexec:$PATH"
+export PATH="/Users/adrianrosen/Documents/libs/libLAS/xcode/bin/Release/Debug:$PATH"
