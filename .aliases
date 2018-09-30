@@ -1,1 +1,6 @@
+# Git
 alias gs='git status'
+
+# Todo
+alias todo.sh='/usr/local/Cellar/todo-txt/2.11.0/bin/todo.sh -d ~/Documents/todo/todo.cfg'
+alias t='todo.sh'

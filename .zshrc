@@ -2,13 +2,29 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adrianrosen/.oh-my-zsh"
+export ZSH="/Users/adrianrosen/.oh-my-zsh"  
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes agnoster
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status todo root_indicator background_jobs nvm)
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -f`"
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND=black
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND=white
+POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=black
+POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=001
+POWERLEVEL9K_CONTEXT_SUDO_BACKGROUND=black
+POWERLEVEL9K_CONTEXT_SUDO_FOREGROUND=003
+POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND=100
+POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND=white
+POWERLEVEL9K_CONTEXT_REMOTE_SUDO_BACKGROUND=100
+POWERLEVEL9K_CONTEXT_REMOTE_SUDO_FOREGROUND=003
+
+source /usr/local/Cellar/todo-txt/2.11.0/etc/bash_completion.d/todo_completion complete -F _todo t
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,8 +88,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

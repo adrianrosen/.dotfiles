@@ -47044,9 +47044,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>-1590 694 620 392 -2560 -94 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>419 313 918 512 0 0 1440 877 </string>
+	<string>98 219 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 419 766 758 0 0 1920 1177 </string>
+	<string>-2 308 1920 869 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1022 294 570 452 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
@@ -47261,6 +47261,8 @@
 			<integer>100</integer>
 			<key>Command</key>
 			<string>/bin/zsh</string>
+			<key>Cursor Boost</key>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -47273,15 +47275,15 @@
 			<key>Cursor Guide Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>0.25</real>
+				<real>0.066666666666666666</real>
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.9268307089805603</real>
+				<real>0.93459359113641949</real>
 				<key>Red Component</key>
-				<real>0.70213186740875244</real>
+				<real>0.733734130859375</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
@@ -47292,6 +47294,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Cursor Type</key>
+			<integer>1</integer>
 			<key>Custom Command</key>
 			<string>Yes</string>
 			<key>Custom Directory</key>
@@ -47622,6 +47626,8 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Minimum Contrast</key>
+			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -47686,6 +47692,8 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Cursor Guide</key>
+			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -47708,8 +47716,12 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>557998936.27436304</real>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -47745,6 +47757,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/adrianrosen/.iTermPreferences</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -47754,7 +47768,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-09-07T14:39:41Z</date>
+	<date>2018-09-17T19:53:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -47771,6 +47785,10 @@
 	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Notes</string>
+	</array>
 	<key>UseBorder</key>
 	<false/>
 	<key>WindowNumber</key>
@@ -47779,5 +47797,9 @@
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
 	<string>3.2.0</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
