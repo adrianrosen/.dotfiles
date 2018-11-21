@@ -10,3 +10,21 @@ codef() {
 atomf() {
   atom "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
+
+cleanPodCache() {
+  rm -rf "${HOME}/Library/Caches/CocoaPods"
+}
+
+cleanPodFolderInCurrentDir() {
+  rm -rf "`pwd`/Pods/"
+}
+
+cleanAndUpdatePods() {
+  cleanPodCache
+  cleanPodFolderInCurrentDir
+  pod update
+}
+
+tDo() {
+  t do "$@" && t ls
+}

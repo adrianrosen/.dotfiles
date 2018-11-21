@@ -18,3 +18,5 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/opt/gdal2/bin:$PATH"
 export PATH="/usr/local/opt/ccache/libexec:$PATH"
 export PATH="/Users/adrianrosen/Documents/libs/libLAS/xcode/bin/Release/Debug:$PATH"
+
+#export PATH=/anaconda2/bin:$PATH
