@@ -4,14 +4,16 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/adrianrosen/.oh-my-zsh"  
 
+export TERM="xterm-256color"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes agnoster
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status todo root_indicator background_jobs nvm)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh virtualenv dir anaconda vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status todo time root_indicator background_jobs nvm)
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -f`"
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND=black
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND=white
@@ -100,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
  else
    export EDITOR='emacs'
  fi
+
+# Ignore ORIG_HEAD from git-completion
+zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

@@ -28,3 +28,17 @@ cleanAndUpdatePods() {
 tDo() {
   t do "$@" && t ls
 }
+
+# List all branches which are missing upstream branch ('gone') and prompts if it should remove them or not. (not force delete!)
+git_rm_all_gone_branches() {
+	git fetch -p > /dev/null 2>&1
+	git branch -vv | grep -v '^*' | grep ": gone]" | awk '{ print $1 " " $2 " " $3 " " $4 }'
+	echo "Do you want to delete the branches above?"
+	select yn in "Yes" "Yes, force-delete" "No"; do
+		case $yn in
+			Yes ) git branch -vv | grep ": gone]" | awk '{print $1}' | xargs -n 1 git branch -d; break;;
+			"Yes, force-delete" )  git branch -vv | grep ": gone]" | awk '{print $1}' | xargs -n 1 git branch -D; break;;
+			No ) return;;
+		esac
+	done
+}
