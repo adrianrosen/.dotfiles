@@ -25,8 +25,22 @@ cleanAndUpdatePods() {
   pod update
 }
 
-tDo() {
-  t do "$@" && t ls
+todoDo() {
+  todo do "$@" && t ls
+}
+
+tOutAndInTo() {
+	if [ -z "$1" ]
+	then
+		echo "Must have one parameter specifying what to have as a note!"
+	else
+		if [ "$2" ]
+		then
+			t out --at "$2" && t in --at "$2" "$1" && t today -v
+		else
+			t out && t in "$1" && t today -v
+		fi
+	fi
 }
 
 # List all branches which are missing upstream branch ('gone') and prompts if it should remove them or not. (not force delete!)

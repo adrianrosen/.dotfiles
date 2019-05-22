@@ -1,6 +1,7 @@
 # Git
 alias gs='git status'
 alias ga="git add"
+alias gcl="git clone"
 alias gb="git branch"
 alias go="git checkout"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -8,11 +9,15 @@ alias gd="git diff"
 alias gf="git fetch"
 alias gr="git rebase"
 alias gm="git merge"
-alias gcm="git commit -v -m"
-alias gcam="git commit -v -am"
+alias gcm="git commit --verbose -m"
+alias gcam="git commit --verbose --amend"
 alias gom="git checkout master"
 alias gfsrp="git fetch && git stash && git rebase && git stash pop"
 
+# CocoaPods
+alias pinst="pod install"
+alias pu="pod update"
+
 # Todo
 alias todo.sh='/usr/local/Cellar/todo-txt/2.11.0/bin/todo.sh -d ~/Documents/todo/todo.cfg'
-alias t='todo.sh'
+alias todo='todo.sh'
